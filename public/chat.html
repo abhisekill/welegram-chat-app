@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Welegram</title>
+</head>
+<body>
+    
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1><i class="fas fa-comments"></i>Welegram</h1>
+            <a class="btn" id="leave-btn">Leave Room</a>
+        </header>
+
+        <main class="chat-main">
+            <div class="chat-sidebar">
+                <h3><i class="fas fa-user-circle"></i> Room Name:</h3>
+                <h2 id="room-name"></h2>
+                <h3><i class="fas fa-users"></i>Users</h3>
+                <ul id="users">
+                    <!-- <li>abhishek</li> -->
+                </ul>
+            </div>
+
+            <div class="chat-messages">
+                <!-- <div class="message">
+                    <p class="meta">abhishek  <span>9:00 pm</span></p>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta culpa dolore blanditiis perferendis qui </p>
+                </div> -->
+            </div>
+        </main>
+
+        <div class="chat-form-container">
+            <form id="chat-form">
+                <input type="text" id="msg" placeholder="Enter Message" required autocomplete="off">
+                <button class="btn"><i class="fas fa-paper-plane"></i>Send</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="chat-footer">
+        <nav>
+            <ul>
+                <li><a href="https://github.com/abhisekill" target="_blank">
+                    <i class="fab fa-github fa-2x"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/abhisekill" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                <li><a href="https://www.instagram.com/abhi_shek_05/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js" integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
